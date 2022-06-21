@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>travelster</title>
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:wght@700&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/43124feaf5.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+
+    <nav class="navbar">
+      <!-- <h2 class="logo">ADVENTURE</h2> -->
+      <h2 class="logo">travelster</h2>
+      <ul class="nav-links">
+        <li class="active"><a href="#"></a>Home</li>
+        <li><a href="#events-section">Events</a></li>
+        <li><a href="#explore-section">Explore</a></li>
+        <li><a href="#"></a>About</li>
+        <li class="ctn"><a href="#"></a>Contact</li>
+      </ul>
+      <img class="menu-btn" src="images/menu-btn.png" alt="menu-btn-img">
+    </nav>
+
+    <!-- Header -->
+    <header>
+      <div class="header-content">
+        <h2>Explore The Colorful World</h2>
+        <div class="line"></div>
+        <h1>A WONDERFUL GIFT</h1>
+        <a href="#" class="ctn">Learn More</a>
+      </div>
+    </header>
+
+    <!-- Events -->
+    <section class="events" id="events-section">
+      <div class="title">
+        <h2 class="events-title">UPCOMMING EVENTS</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <img src="images/img1.png" alt="img1-img">
+          <h4 class="events-header">Everest Camp Trek</h4>
+          <p class="events-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id cursus ex.</p>
+          <a href="#" class="ctn">Learn More</a>
+        </div>
+        <div class="col">
+          <img src="images/img2.png" alt="img2-img">
+          <h4 class="events-header">Walking Holidays</h4>
+          <p class="events-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id cursus ex.</p>
+          <a href="#" class="ctn">Learn More</a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Explore -->
+    <section class="explore" id="explore-section">
+      <div class="explore-content">
+        <h2 class="explore-content-header">EXPLORE THE WORLD</h2>
+        <div class="line"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus est leo, interdum vel lacus vitae, posuere tempus nisi. Quisque id dapibus enim, non aliquet nunc. </p>
+        <a href="#" class="ctn">Learn More</a>
+      </div>
+    </section>
+
+  <!-- Tours -->
+  <section class="tours">
+    <div class="row">
+      <div class="col content-col">
+        <h2>UPCOMMING TOURS & DESTINATIONS</h2>
+        <div class="line"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam augue lectus, volutpat sit amet semper vitae, porta ac mi. Duis sollicitudin vitae nisi nec malesuada. Fusce justo dui, luctus laoreet.</p>
+        <a href="#" class="ctn">Learn More</a>
+      </div>
+      <div class="col image-col">
+        <div class="image-gallery">
+          <img src="images/img3.png" alt="img3-img">
+          <img src="images/img4.png" alt="img4-img">
+          <img src="images/img5.png" alt="img5-img">
+          <img src="images/img6.png" alt="img6-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section class="footer">
+    <i class="footer-icons fa-brands fa-twitter"></i>
+    <i class="footer-icons fa-brands fa-facebook-f"></i>
+    <i class="footer-icons fa-brands fa-instagram"></i>
+    <i class="footer-icons fa-solid fa-envelope"></i>
+    <p>© Copyright by 2022 Outdoor Adventure. All Rights Reserved.</p>
+  </section>
+
+    <script type="text/javascript">
+      const menuBtn = document.querySelector('.menu-btn')
+      const navlinks = document.querySelector('.nav-links')
+      menuBtn.addEventListener('click', ()=> {
+        navlinks.classList.toggle('mobile-menu')
+      })
+    </script>
+
+  </body>
+</html>
