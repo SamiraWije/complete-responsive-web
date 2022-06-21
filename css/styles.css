@@ -1,0 +1,306 @@
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+h1, h2{
+  font-family: 'Bona Nova', serif;
+}
+
+p, li, a{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.active {
+  color: #F94C66;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1.25rem;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 0 1.9rem;
+  font-size: 1.2rem;
+}
+
+.nav-links a {
+  color: white;
+}
+
+header{
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url('../images/header-bg.png'); */
+  background-image: url('../images/pexels-kelly-l-2509093.jpg');
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.header-content {
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+
+.header-content h2 {
+  font-size: 2rem;
+}
+
+.line {
+  width: 10rem;
+  height: 0.25rem;
+  background: #F94C66;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.header-content h1 {
+  font-size: 4rem;
+  margin-top: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.ctn {
+  padding: 0.5rem 0.9rem;
+  background: #F94C66;
+  border-radius: 20px;
+  color: white;
+}
+
+.menu-btn {
+  position: absolute;
+  top: 1.9rem;
+  right: 1.9rem;
+  width: 2.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* Events */
+section {
+  width: 80%;
+  margin: 80px auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.events .row {
+  margin-top: 3.125rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.col img {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.col {
+  text-align: center;
+}
+
+.events h4 {
+  font-size: 2rem;
+  margin: 1.25rem auto;
+}
+
+.events p {
+  padding: 0 2.5rem 2.5rem;
+  font-size: 1.5rem;
+}
+
+.events .ctn {
+  margin-top: 100px;
+}
+
+.events-title, .events-header, .events-desc {
+  color: #4B5D67;
+}
+
+/* Explore */
+.explore {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../images/bg2.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.explore-content {
+  width: 50%;
+  padding: 3.125rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.explore-content h2 {
+  font-size: 2rem;
+}
+
+.explore-content .line {
+  margin-bottom: 1.5rem;
+}
+
+.explore-content p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.explore-content .ctn {
+  margin-top: 1.5rem;
+}
+
+/* Tours */
+.content-col {
+  width: 40%;
+  color: #4B5D67;
+}
+
+.image-col {
+  width: 60%;
+}
+
+.tours .image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+
+.image-gallery img {
+  width: 49%;
+  margin: 0.1rem;
+}
+
+.content-col h2 {
+  font-size: 2rem;
+}
+
+.content-col p {
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 1.87rem;
+}
+
+.footer {
+  background-color: #4B5D67;
+  color: white;
+  min-height: 5rem;
+  width: 100%;
+  padding: 2.5rem;
+  text-align: center;
+  margin: 0;
+}
+
+.footer p {
+  margin: 20px auto;
+  padding: 20px auto;
+}
+
+.footer-icons {
+  margin: 0.5rem;
+}
+
+/* Mobile Device */
+@media (max-width: 850px) {
+  .menu-btn {
+    display: block;
+  }
+  .navbar {
+    padding: 0;
+  }
+  .logo {
+    position: absolute;
+    top: 1.9rem; /*1.9rem */
+    left: 1.9rem; /*1.9rem */
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: #4B5D67;
+    margin-top: -900px;
+    transition: all 0.5s ease;
+  }
+  .mobile-menu {
+    margin-top: 0;
+  }
+  .nav-links li {
+    margin: 1.9rem auto;
+  }
+
+  /* Events */
+  .row {
+    flex-direction: column;
+  }
+
+  .row .col {
+    margin: 1.25rem auto;
+  }
+  /* Explore */
+  .explore-content {
+    margin: auto;
+    width: 90%;
+  }
+
+  /* Tours */
+  .tours .col {
+    width: 100%;
+  }
+  .image-gallery {
+    justify-content: center;
+    align-items: center;
+  }
+  .image-gallery img {
+    width: 90%;
+  }
+}
